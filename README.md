@@ -5,6 +5,5 @@ git init
 git add .  
 git commit -m '首次提交 用于weeb相关的测试'  
 git remote add origin https://github.com/AdamoChen/demo-web  
-git remote add origin https://github.com/AdamoChen/demo-web  
 git push -u origin master  
 git status  
