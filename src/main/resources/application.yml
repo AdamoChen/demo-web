@@ -10,3 +10,14 @@ server:
     key-store-type: PKCS12
     key-alias: demoweb
     #key-password:
+
+test:
+  executor:
+    task:
+      coreSize: 3
+      maxSize: 3
+      queueCapacity: 500
+      keepAliveSeconds: 120
+      threadNamePrefix: test-executor-
+      waitForTasksToCompleteOnShutdown: false
+      awaitTerminationSeconds: 10

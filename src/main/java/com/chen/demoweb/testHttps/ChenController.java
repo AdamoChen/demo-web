@@ -1,4 +1,4 @@
-package com.chen.demoweb.contorller;
+package com.chen.demoweb.testHttps;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
