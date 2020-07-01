@@ -69,6 +69,16 @@ public class ExecutorConfiger {
          * false        bean直接销毁
          * true         bean直接销毁
          *
+         * 以下为linux kill -15 结果
+         *
+         * 死循环的情况。
+         * true  5  任务继续执行，等5s后 任务方法中断 bean销毁。不相关的bean直接销毁。相关的会在时间到后销毁。
+         *
+         * false   直接中断，bean销毁。
+         *
+         * sleep的情况
+         *
+         *true 5  任务继续执行，等5s后 任务方法中断 bean销毁。不相关的bean直接销毁。相关的会在时间到后销毁。不抛异常
          */
          executor.setWaitForTasksToCompleteOnShutdown(true);
          executor.setAwaitTerminationSeconds(5);

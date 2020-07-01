@@ -24,12 +24,12 @@ public class ThreadPoolService {
     public void testAsync(){
         try {
             System.out.println("---start testAsync---");
-            Utils.wihleTrue();
+            //Utils.wihleTrue();
 
-//            Thread.sleep(3000);
-//            firstService.first();
-//            Thread.sleep(3000);
-//            secondService.second();
+            Thread.sleep(3000);
+            firstService.first();
+            Thread.sleep(3000);
+            secondService.second();
             System.out.println(Thread.currentThread().getName() + "------------------ call testAsync done ...");
         } catch (Exception e) {
             e.printStackTrace();
